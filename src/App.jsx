@@ -1623,7 +1623,7 @@ export default function App() {
       calendarDays.push(new Date(year, month, i));
 
     return (
-      <div className="animate-in fade-in duration-500 max-w-6xl mx-auto">
+      <div className="animate-in fade-in duration-500 w-full mx-auto">
         <div className="text-center mb-6">
           <h2 className="text-3xl font-black text-gray-800 flex items-center justify-center gap-3">
             <Globe className="text-indigo-500" /> 線上課專屬排課月曆
@@ -2322,7 +2322,7 @@ export default function App() {
     const pendingEvents = myGroups.filter((g) => g.status === 'pending');
 
     return (
-      <div className="max-w-7xl mx-auto pb-20 px-4 animate-in fade-in duration-500">
+      <div className="w-full mx-auto pb-20 animate-in fade-in duration-500">
         <h2 className="text-2xl font-black text-center mb-8 flex justify-center items-center gap-4">
           <div
             className={`w-12 h-12 rounded-2xl ${myT.avatar} text-white flex items-center justify-center text-xl`}
@@ -2805,7 +2805,7 @@ export default function App() {
     });
 
     return (
-      <div className="max-w-7xl mx-auto space-y-8 animate-in fade-in duration-500">
+      <div className="w-full mx-auto space-y-8 animate-in fade-in duration-500">
         <div className="flex gap-2 p-2 bg-white rounded-2xl shadow-sm overflow-x-auto custom-scrollbar sticky top-20 z-20 border border-gray-100">
           <button
             onClick={() => setAdminTab('schedule')}
@@ -5166,7 +5166,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-[#FFFbf5] pb-20 font-sans selection:bg-blue-200">
       <nav className="bg-white/95 backdrop-blur-xl shadow-sm p-4 sticky top-0 z-40 no-print border-b-2 border-orange-50">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="w-full px-2 sm:px-8 mx-auto flex justify-between items-center">
           <div
             className="flex items-center gap-4 cursor-pointer group"
             onClick={() => setCurrentView('home')}
@@ -5225,7 +5225,7 @@ export default function App() {
         </div>
       </nav>
 
-      <main className="max-w-7xl mx-auto p-4 mt-8">
+      <main className="w-full px-2 sm:px-8 mx-auto mt-8">
         {currentView === 'home' && renderHomeView()}
         {currentView === 'admin-login' && renderAdminLogin()}
         {currentView === 'teacher-select' && renderTeacherSelect()}
